@@ -1,0 +1,247 @@
+.registration_top {
+    background-color: #F8F3F4;
+    &__title {
+        color: #F16D7F;
+        font-family: Lato;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.registration {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 128px;
+}
+
+.registration_block {
+    padding-top: 64px;
+    padding-bottom: 96px;
+}
+
+.registration_form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.reg_form_title {
+    color: rgb(34, 34, 34);
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    padding-bottom: 20px;
+}
+
+.first_name {
+    margin-bottom: 20px;
+}
+
+.last_name {
+    margin-bottom: 34px;
+}
+
+.sex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    color: rgb(0, 0, 0);
+    font-family: Lato;
+    font-size: 11px;
+    font-weight: 300;
+    padding-bottom: 35px;
+}
+
+.sex_female {
+    margin-right: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.sex_male {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.email {
+    margin-bottom: 20px;
+}
+
+.password {
+    margin-bottom: 15px;
+}
+
+.password_text {
+    max-width: 360px;
+    color: rgb(177, 177, 177);
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+    padding-bottom: 39px;
+}
+
+.join_button {
+    background: rgb(241, 109, 127);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    line-height: normal;
+    border-color: rgb(241, 109, 127);
+    border-style: solid;
+    width: 167px;
+    height: 50px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    color: rgb(255, 255, 255);
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.join_button path {
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.join_button:hover {
+    color: rgb(241, 109, 127);
+    background-color: transparent;
+    border-color: rgb(241, 109, 127);
+}
+
+.join_button:hover path {
+    fill: rgb(241, 109, 127);
+}
+
+.registration_text {
+    padding-top: 64px;
+}
+
+.reg_subtitle {
+    color: rgb(0, 0, 0);
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding-bottom: 22px;
+}
+
+.reg_description {
+    color: rgb(0, 0, 0);
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    letter-spacing: 0%;
+    text-align: left;
+    max-width: 652px;
+    padding-bottom: 22px;
+}
+
+.reg_li {
+    color: rgb(0, 0, 0);
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    list-style-image: url(img/li_registration.svg);
+    padding-bottom: 16px;
+}
+
+.reg_li_last {
+    padding-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+    .registration {
+        gap: 22px;
+    }
+    .registration_block {
+        padding-top: 40px;
+    }
+    .registration_text {
+        padding-top: 40px;
+    }
+    .reg_subtitle {
+        padding-bottom: 32px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .reg_description {
+        max-width: 354px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .reg_li {
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+
+@media (max-width:767px) {
+    .registration_top__title {
+        text-align: center;
+    }
+    .registration {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        gap: 0px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .registration_block {
+        padding-top: 40px;
+        padding-bottom: 0;
+    }
+    .registration_text {
+        padding-top: 40px;
+        padding-bottom: 100px;
+    }
+    .reg_description {
+        max-width: 400px;
+    }
+}
