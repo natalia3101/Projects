@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Планировщик бюджета</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="title">Личный бюджет</h1>
+
+        <!-- Элементы управления для фильтрации по датам -->
+        <div id="date-filters">
+            <select class="select_date" id="month-select" onchange="filterByDate()">
+                <option value="" >Выберите месяц</option>
+            </select>
+            <select class="select_date" id="year-select" onchange="filterByDate()">
+                <option value="">Выберите год</option>
+            </select>
+        </div>
+
+        <div id="no-data-message" class="no_transactions" style="display: none;"> Нет доступных транзакций </div>
+
+        <!-- Форма для добавления транзакций -->
+        <form id="transaction-form">
+            <select id="type" class="select_transaction-form">
+                <option value="" disabled selected>Тип</option>
+                <option value="income">Доход</option>
+                <option value="expense">Расход</option>
+            </select>
+            <select class="select_transaction-form" id="category_expense" style="display: none;">
+                <option value="" disabled selected>Категория</option>
+                <option value="auto">Авто, бензин</option>
+                <option value="charity">Благотворительность</option>
+                <option value="health">Здоровье</option>
+                <option value="investments">Инвестиции</option>
+                <option value="bills">Квартира, счета</option>
+                <option value="tax">Налоги</option> 
+                <option value="savings">Накопления</option> 
+                <option value="entertainment">Отдых, развлечения</option>
+                <option value="education">Образование, книги</option>
+                <option value="gifts">Подарки</option>
+                <option value="food">Продукты</option>
+                <option value="transport">Проезд</option>
+                <option value="travel">Путешествия</option>
+                <option value="internet">Связь, интернет</option>
+                <option value="sport">Спорт</option>
+                <option value="gadgets">Техника</option>
+                <option value="selfcare">Уход за&nbsp;собой</option>
+                <option value="hobby">Хобби</option>
+                <option value="household">Хозяйственные расходы</option>
+            </select>
+            <select class="select_transaction-form" id="category_income" style="display: none;">
+                <option value="" disabled selected>Категория</option>
+                <option value="dividends">Дивиденды</option>
+                <option value="extra">Дополнительный доход</option>
+                <option value="salary">Зарплата</option>
+                <option value="bonus">Премия</option>
+                <option value="presents">Подарки</option>
+            </select>
+            <input class="select_transaction-form" type="number" placeholder="Сумма" id="amount" required>
+            <button class="add_btn" type="submit">Добавить транзакцию</button>
+        </form>
+
+
+        <!-- Таблица для отображения транзакций -->
+        <table id="transactions-table" class="trans_table">
+            <thead>
+                <tr>
+                    <th>Описание</th>
+                    <th>Сумма</th>
+                    <th>Тип</th>
+                    <th>Дата</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Сюда будут добавляться транзакции -->
+            </tbody>
+        </table>
+
+        <!-- Элементы управления для фильтрации -->
+        <div id="filters" class="filters">
+            <button class="filter_btn" onclick="filterTransactions('all')">Все</button>
+            <button class="filter_btn" onclick="filterTransactions('Доходы')">Доходы</button>
+            <button class="filter_btn" onclick="filterTransactions('Расходы')">Расходы</button>
+        </div>
+
+        <!-- Место для статистики -->
+        <div id="statistics" class="visual_statistics">
+            <div class="incomeExpenseChart">
+                <h3 class="statistics_title">Баланс доходов и&nbsp;расходов</h3>
+                <canvas id="incomeExpenseChart"></canvas>
+            </div>
+            <div class="statistics_income_expense">
+                <div class="incomeChart">
+                    <h3 class="statistics_title">Статистика доходов</h3>
+                    <canvas id="incomeChart"></canvas>
+                </div>
+                <div class="expenseChart">
+                    <h3 class="statistics_title">Статистика расходов</h3>
+                    <canvas id="expenseChart"></canvas></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

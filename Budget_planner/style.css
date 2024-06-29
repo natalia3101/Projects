@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Source Sans 3", sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 65%;
+    margin: auto;
+    background: rgba(237, 222, 222, 0.396);
+    padding: 20px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    color: rgb(25, 24, 24);
+    font-family: "Marck Script";
+    font-weight: 400;
+    line-height: 125%;
+    text-align: left;
+    font-size: 71px;
+    border-bottom: 10px solid #ffc0cb;
+    padding-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.trans_table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+th {
+    background-color: #ffc0cb;
+}
+
+#date-filters {
+    margin-top: 20px;
+}
+
+.select_date {
+    padding: 10px;
+    margin-right: 5px;
+    outline: none;
+    border: 2px solid #ffc0cb;
+    border-radius: 4px;
+    font-family: "Source Sans 3";
+    font-weight: 400;
+    font-size: 20px;
+    background-color: #ffc0cb;
+    margin-top: 5px;
+}
+
+.select_date option {
+    background-color: rgba(237, 222, 222);
+}
+
+.select_date:focus {
+    outline: none;
+}
+
+.select_transaction-form {
+    padding: 10px;
+    margin-right: 5px;
+    outline: none;
+    border: 2px solid #ffc0cb;
+    border-radius: 4px;
+    font-family: "Source Sans 3";
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.add_btn {
+    padding: 12px;
+    margin-top: 5px;
+    cursor: pointer;
+    background-color: #96a483;
+    color: white;
+    border: 2px solid #96a483;
+    border-radius: 5px;
+    height: 52px;
+}
+
+.add_btn:hover {
+    background-color: #768561;
+    border: 2px solid #768561;
+}
+
+.no_transactions {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: rgb(25, 24, 24);
+    font-family: "Marck Script";
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.filters {
+    margin-top: 20px;
+}
+
+.filter_btn {
+    padding: 12px;
+    margin-top: 5px;
+    cursor: pointer;
+    background-color: #96a483;
+    color: white;
+    border: 1px solid #96a483;
+    border-radius: 5px;
+    height: 52px;
+    margin-right: 5px;
+}
+
+.filter_btn:hover {
+    background-color: #768561;
+    border: 1px solid #768561;
+}
+
+.filter_btn:active {
+    background-color: #768561;
+    border: 1px solid #768561;
+}
+
+.delete-button {
+    display: none;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #fc7087;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    padding: 4px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    line-height: 12px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+tr:hover .delete-button {
+    display: block;
+    /* Показать при наведении на строку */
+}
+
+.statistics_title {
+    color: rgb(25, 24, 24);
+    font-family: "Marck Script";
+    font-weight: 400;
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.incomeExpenseChart {
+    width: 75%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: auto;
+}
+
+.statistics_income_expense {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin: auto;
+}
+
+.incomeChart {
+    width: 42%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: auto;
+}
+
+.expenseChart {
+    width: 42%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: auto;
+}
+
+.visual_statistics {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1023px) {
+    .container {
+        width: 70%;
+    }
+    .title {
+        text-align: center;
+        font-size: 64px;
+        margin-top: 20px;
+    }
+    .select_date {
+        padding: 7px;
+        font-size: 18px;
+    }
+    .select_transaction-form {
+        padding: 7px;
+        font-size: 18px;
+    }
+    .add_btn {
+        padding: 7px;
+        height: 43px;
+    }
+    .filter_btn {
+        padding: 7px;
+        height: 43px;
+    }
+    .statistics_title {
+        font-size: 33px;
+    }
+}
+
+@media (max-width:767px) {
+    body {
+        font-size: 16px;
+    }
+    .container {
+        width: 100%;
+    }
+    .title {
+        font-size: 57px;
+        margin-top: 10px;
+    }
+    .select_date {
+        padding: 5px;
+        font-size: 16px;
+    }
+    .select_transaction-form {
+        padding: 5px;
+        font-size: 16px;
+    }
+    .add_btn {
+        padding: 5px;
+        height: 36px;
+        font-size: 16px;
+    }
+    .filter_btn {
+        padding: 5px;
+        height: 36px;
+        font-size: 16px;
+    }
+    .statistics_title {
+        font-size: 24px;
+    }
+    .no_transactions {
+        font-size: 21px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .select_date option {
+        font-size: 16px;
+    }
+    .statistics_income_expense {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .incomeExpenseChart {
+        width: 90%;
+    }
+    .incomeChart {
+        width: 75%;
+    }
+    .expenseChart {
+        width: 75%;
+    }
+}
