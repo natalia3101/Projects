@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="projects_page">
+
+        <header class="header center">
+            <div class="logos">
+                <a href="index.html"><img class="logo" src="images/Logo.png" alt="logo"></a>
+                <a href="index.html" class="brand_name">Interno</a>
+            </div>
+            <nav class="nav_right-side">
+                <a class="nav_right-side" href="index.html">Home</a>
+                <a class="nav_right-side" href="#">Project</a>
+                <a class="nav_right-side" href="#">Blog</a>
+            </nav>
+        </header>
+
+        <section class="banner_projectPage center ">
+            <div class="banner_info_prjectPage">
+                <h1 class="banner_title_projectPage">Our Project</h1>
+                <h3 class="banner_subtitle_projectPage">Home / Project</h3>
+            </div>
+        </section>
+
+        <section class="categories_projectPage center">
+            <div class="project__categories-wrap">
+                <div :class="{ active: categories.activCategories }" class="project__categories-button" v-for="categories in categoriesList" :key="categories.id" @click="isActive(categories)">{{ categories.nameCategories }}</div>
+            </div>
+        </section>
+
+        <footer class="footer center">
+            <div class="info_footer">
+                <div class="logos">
+                    <a href="index.html"><img class="logo" src="images/Logo.png" alt="logo"></a>
+                    <a href="index.html" class="brand_name">Interno</a>
+                </div>
+                <p class="footer_description">It is a long established fact that a reader will be distracted lookings.</p>
+            </div>
+            <div class="nav_footer">
+                <h3 class="nav_subtitle">Pages</h3>
+                <nav class="nav_footer_links">
+                    <a class="nav_footer_links" href="index.html">Home</a>
+                    <a class="nav_footer_links" href="#">Project</a>
+                    <a class="nav_footer_links" href="#">Blog</a>
+                </nav>
+            </div>
+
+            <div class="contact_info">
+                <h2 class="contact_title">Contact</h2>
+                <p class="contact_address">55 East Birchwood Ave. Brooklyn,
+                    <Br>New York 11201 </p>
+                <p class="contact_email">contact@interno.com</p>
+                <p class="contact_phone">(123) 456 - 7890</p>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>

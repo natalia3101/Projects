@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="blog_page_box">
+
+        <header class="header center">
+            <div class="logos">
+                <a href="index.html"><img class="logo" src="images/Logo.png" alt="logo"></a>
+                <a href="index.html" class="brand_name">Interno</a>
+            </div>
+            <nav class="nav_right-side">
+                <a href="index.html">Home</a>
+                <a href="#">Project</a>
+                <a href="#">Blog</a>
+            </nav>
+        </header>
+
+        <section class="banner center">
+            <div class="banner_info">
+                <h1 class="banner_title">Articles & News</h1>
+                <h3 class="banner_subtitle">Home / Blog</h3>
+            </div>
+        </section>
+
+        <section class="latest_post center">
+            <h1 class="latest_post_title">Latest Post</h1>
+            <div class="latest_post_block">
+                <img src="images/blogPage/latestPost.svg" alt="latest post">
+                <div class="latest_post_content">
+                    <h3 class="latest_post_subtitle">Low Cost Latest Invented Interior Designing Ideas</h3>
+                    <p class="latest_post_text">Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpis dignissim maximus.posuere in.Contrary to popular belief. <br><br>Lorem Ipsum is not simply random text. It has roots in a piece of classica.</p>
+                    <div class="latest_post_bottomInfo">
+                        <p class="latest_post_date">26 December,2022</p>
+                        <button class="beige_button beige_button_small"><img src="images/beige_button_arrow.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="articles center">
+            <h1 class="articles__title">Articles & News</h1>
+
+            <div class="articles__items">
+                <div v-for="article in articles" :key="article.id" class="article_item">
+                    <div class="articles__items-image">
+                        <img :src="'../project/images/blogPage/' + article.image" :alt="article.image">
+                        <p class="blog__img-text">{{article.imgText}}</p>
+                    </div>
+                    <div class="articles__items_info">
+                        <h2 class="articles__items-title">{{article.itemTitle}}</h2>
+                        <div class="articles__items-text">
+                            <p>{{article.itemData}}</p>
+                            <button class="beige_button beige_button_small"><img src="images/beige_button_arrow.svg" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page_count">
+
+                <div class="count__page-wrap">
+                    <a href="#" class="count__page-number">
+                        <p class="count__page-number-text">01</p>
+                    </a>
+                    <a href="#" class="count__page-number">
+                        <p class="count__page-number-text">02</p>
+                    </a>
+                    <a href="#" class="count__page-number">
+                        <p class="count__page-number-text">03</p>
+                    </a>
+                    <a href="#">
+                        <svg class="count__page-svg" xmlns="http://www.w3.org/2000/svg" width="53" height="52" viewBox="0 0 53 52" fill="none">
+                             <circle cx="26.5" cy="26" r="25.5" stroke="#CDA274" />
+                             <path d="M23.5571 32L29.5 25.3143L23.5571 18.6286" stroke="#292F36" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <footer class="footer center">
+            <div class="info_footer">
+                <div class="logos">
+                    <a href="index.html"><img class="logo" src="images/Logo.png" alt="logo"></a>
+                    <a href="index.html" class="brand_name">Interno</a>
+                </div>
+                <p class="footer_description">It is a long established fact that a reader will be distracted lookings.</p>
+            </div>
+            <div class="nav_footer">
+                <h3 class="nav_subtitle">Pages</h3>
+                <nav class="nav_footer_links">
+                    <a href="index.html">Home</a>
+                    <a href="#">Project</a>
+                    <a href="#">Blog</a>
+                </nav>
+            </div>
+
+            <div class="contact_info">
+                <h2 class="contact_title">Contact</h2>
+                <p class="contact_address">55 East Birchwood Ave. Brooklyn,
+                    <Br>New York 11201 </p>
+                <p class="contact_email">contact@interno.com</p>
+                <p class="contact_phone">(123) 456 - 7890</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

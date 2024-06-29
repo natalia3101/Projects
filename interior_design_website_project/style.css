@@ -1,0 +1,875 @@
+@charset "UTF-8";
+.footer {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 130px;
+    justify-content: space-between;
+}
+
+.footer .footer_description {
+    padding-top: 18px;
+    max-width: 393px;
+    margin: auto;
+    color: rgb(77, 80, 83);
+    font-family: "Jost";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 1%;
+    text-align: left;
+}
+
+.footer .nav_subtitle {
+    color: rgb(41, 47, 54);
+    font-family: "DM Serif Display";
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.footer .nav_footer_links {
+    color: rgb(77, 80, 83);
+    font-family: "Jost";
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 1%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.footer .contact_info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer .contact_title {
+    color: rgb(41, 47, 54);
+    font-family: DM Serif Display;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.footer .contact_info p {
+    color: rgb(77, 80, 83);
+    font-family: "Jost";
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.footer .contact_address {
+    line-height: 1.5;
+}
+
+.banner {
+    background-image: url("../project/images/blogPage/banner.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 356px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.banner_info {
+    position: absolute;
+    border-radius: 37px 37px 0px 0px;
+    background: rgb(255, 255, 255);
+    padding: 41px 78px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.banner_title {
+    color: #292F36;
+    font-family: "DM Serif Display";
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.banner_subtitle {
+    color: #4D5053;
+    font-family: "Jost";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 1%;
+    text-align: left;
+}
+
+.latest_post {
+    margin-top: 200px;
+}
+
+.latest_post_title {
+    color: #292F36;
+    font-family: "DM Serif Display";
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: 2%;
+    text-align: left;
+}
+
+.latest_post_block {
+    margin-top: 27px;
+    box-sizing: border-box;
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: 62px;
+    box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
+    display: flex;
+    gap: 62px;
+    padding: 22px;
+    align-items: center;
+}
+
+.latest_post_content {
+    max-width: 469px;
+}
+
+.latest_post_subtitle {
+    color: #292F36;
+    font-family: "DM Serif Display";
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: 2%;
+    text-align: left;
+}
+
+.latest_post_text {
+    margin-top: 22px;
+    color: #4D5053;
+    font-family: "Jost";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 1%;
+    text-align: left;
+}
+
+.latest_post_bottomInfo {
+    margin-top: 41px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.latest_post_date {
+    color: #4D5053;
+    font-family: "Jost";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 1%;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.beige_button img {
+    vertical-align: middle;
+}
+
+.articles {
+    margin-top: 150px;
+}
+
+.articles__title {
+    color: "DM Serif Display";
+    font-family: "DM Serif Display";
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: 2%;
+    text-align: left;
+}
+
+.articles__items {
+    margin-top: 30px;
+}
+
+.page_count {
+    margin-top: 51px;
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.count__page-wrap {
+    display: flex;
+    gap: 20px;
+}
+
+.count__page-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    border: 1px #cda274 solid;
+    width: 52px;
+    height: 52px;
+    border-radius: 52px;
+}
+
+.count__page-number-text {
+    color: #292f36;
+    font-family: "Jost";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: capitalize;
+}
+
+.count__page-number:hover {
+    background: #f4f0ec;
+    border: none;
+    width: 54px;
+    height: 54px;
+}
+
+.count__page-svg:hover {
+    fill: #f4f0ec;
+}
+
+.count__page-svg:hover circle {
+    stroke: none;
+}
+
+.banner_blogDetails {
+    background-image: url("../project/images/blogDetailsPage/Banner.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 351px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: "Jost Font", sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+    /* 600 это половина контентной части */
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    margin-top: 44px;
+    margin-bottom: 44px;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo {
+    width: 34px;
+    height: 34px;
+    margin-right: 8px;
+}
+
+.brand_name {
+    color: rgb(41, 47, 54);
+    font-family: "DM Serif Display";
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 125%;
+    text-align: left;
+}
+
+.nav_right-side {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    font-family: "Jost";
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(77, 80, 83);
+}
+
+.banner_img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.banner_box {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 758px;
+    background-image: url("images/Banner.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 62px;
+}
+
+.banner_content {
+    position: absolute;
+}
+
+.banner_content_heading {
+    color: rgb(41, 47, 54);
+    font-family: "DM Serif Display";
+    font-size: 65px;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: 0%;
+    text-align: left;
+    padding-left: 52px;
+    padding-top: 215px;
+}
+
+.banner_content_text {
+    padding-left: 52px;
+    padding-top: 18px;
+    color: rgb(77, 80, 83);
+    font-family: "Jost";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 1%;
+    text-align: left;
+}
+
+.banner_content_button {
+    width: 220.14px;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 26px 49px 26px 48px;
+    border-radius: 18px;
+    box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
+    background: rgb(41, 47, 54);
+    margin-left: 52px;
+    margin-top: 21px;
+    color: rgb(255, 255, 255);
+    font-family: "Jost";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 125%;
+    letter-spacing: 2%;
+    text-align: center;
+}
+
+.button_arrow {
+    width: 15.14px;
+    height: 13.18px;
+}
+
+.projects_nav {
+    margin-top: 100px;
+}
+
+.projects_title {
+    color: rgb(41, 47, 54);
+    font-family: "DM Serif Display";
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: 2%;
+    text-align: center;
+}
+
+.projects_text_box {
+    display: flex;
+    justify-content: center;
+}
+
+.projects_text {
+    margin-top: 8px;
+    color: rgb(77, 80, 83);
+    font-family: "Jost";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 150%;
+    max-width: 737px;
+    text-align: center;
+}
+
+.projects_section {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 548px);
+    justify-content: center;
+    -moz-column-gap: 104px;
+    column-gap: 104px;
+    row-gap: 56px;
+}
+
+.image_box_1 {
+    width: 548px;
+    height: 548px;
+    overflow: hidden;
+    border-top-right-radius: 62px;
+}
+
+.project_img_1 {
+    position: relative;
+    top: -251px;
+}
+
+.image_box_2 {
+    width: 548px;
+    height: 548px;
+    overflow: hidden;
+    border-top-left-radius: 62px;
+}
+
+.project_img_2 {
+    position: relative;
+    top: -410px;
+    right: 55px;
+}
+
+.image_box_3 {
+    width: 548px;
+    height: 548px;
+    overflow: hidden;
+    border-bottom-right-radius: 62px;
+}
+
+.project_img_3 {
+    position: relative;
+    top: -160px;
+    right: 82px;
+}
+
+.image_box_4 {
+    width: 548px;
+    height: 548px;
+    overflow: hidden;
+    border-bottom-left-radius: 62px;
+}
+
+.project_img_4 {
+    position: relative;
+    top: -251px;
+    right: 144px;
+}
+
+.project_description {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.beige_button {
+    background: rgb(244, 240, 236);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: transparent;
+}
+
+.project_subtitle {
+    color: rgb(41, 47, 54);
+    font-family: "DM Serif Display";
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: 2%;
+    text-align: left;
+}
+
+.project_category {
+    padding-top: 4px;
+    color: rgb(77, 80, 83);
+    font-family: "Jost";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 1%;
+    text-align: left;
+}
+
+.statistics {
+    margin-top: 96px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-color: rgb(244, 240, 236);
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.statistics_block {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+.statistics_block:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -50px;
+    /* Регулируйте здесь положение вертикальной черты */
+    width: 1px;
+    /* Ширина черты */
+    background-color: rgb(205, 162, 116);
+}
+
+.statistics_number {
+    color: rgb(205, 162, 116);
+    font-family: "DM Serif Display";
+    font-size: 85px;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: 2%;
+}
+
+.statistics_text {
+    color: rgb(77, 80, 83);
+    font-family: "Jost";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 1%;
+}
+
+.articles_news {
+    margin-top: 96px;
+    margin-bottom: 96px;
+}
+
+.articles_news_title {
+    color: rgb(41, 47, 54);
+    font-family: "DM Serif Display";
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 125%;
+    text-align: center;
+}
+
+.articles_news_description {
+    color: rgb(77, 80, 83);
+    font-family: "Jost";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: center;
+    margin-top: 12px;
+    display: flex;
+    max-width: 811px;
+    margin: auto;
+}
+
+.articles__items-main {
+    margin-top: 52px;
+}
+
+.articles__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Три столбца одинаковой ширины */
+    grid-auto-rows: auto;
+    /* Автоматическая высота строк */
+    gap: 28px;
+}
+
+.article_item {
+    padding: 21px;
+    box-sizing: border-box;
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: 62px;
+    box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
+}
+
+.article_item:hover {
+    background: rgb(244, 240, 236);
+}
+
+.beige_button_small {
+    width: 52px;
+    height: 52px;
+}
+
+.beige_button_small:hover {
+    background-color: rgb(255, 255, 255);
+    border: solid 1px rgb(244, 240, 236);
+}
+
+.article_item:hover .beige_button_small {
+    background-color: rgb(255, 255, 255);
+}
+
+.articles__items-image {
+    width: 340px;
+    height: 295px;
+    overflow: hidden;
+    position: relative;
+    border-top-left-radius: 62px;
+    border-top-right-radius: 62px;
+}
+
+.articles__items-image img {
+    position: relative;
+}
+
+.articles__items-image p {
+    position: absolute;
+    top: 228px;
+    left: 20px;
+    border-radius: 8px 8px 8px 0px;
+    background: #fff;
+    padding: 4px 10px 8px 11px;
+    color: #4d5053;
+    font-family: "Jost";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.16px;
+    text-transform: capitalize;
+}
+
+.articles__items-title {
+    padding-top: 8px;
+    color: rgb(41, 47, 54);
+    font-family: "DM Serif Display";
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: 2%;
+    text-align: left;
+    max-width: 305px;
+}
+
+.articles__items_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 165px;
+}
+
+.articles__items-text {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.articles__items-text p {
+    color: rgb(77, 80, 83);
+    font-family: "Jost";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 1%;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+
+/* стили для blogDetails потому что sass не хочет работать */
+
+.blogDetails_container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 96px;
+    margin-top: 160px;
+    gap: 57px;
+}
+
+.blog_details_article {
+    margin-bottom: 27px;
+}
+
+.article__title {
+    color: rgb(41, 47, 54);
+    font-family: 'DM Serif Display';
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: 2%;
+    text-align: left;
+}
+
+.article__img {
+    margin-top: 11px;
+}
+
+.article__info {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: rgb(77, 80, 83);
+    font-family: 'Jost';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 1%;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.article__text {
+    margin-top: 45px;
+    color: rgb(77, 80, 83);
+    font-family: 'Jost';
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 1%;
+    text-align: left;
+}
+
+.quotation_block {
+    margin-top: 35px;
+    border-radius: 50px;
+    background: rgb(244, 240, 236);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 53px 227px 53px 227px;
+}
+
+.quotation_block-text {
+    color: rgb(205, 162, 116);
+    font-family: 'DM Serif Display';
+    font-style: italic;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: 2%;
+    text-align: center;
+}
+
+.tags__buttons-container {
+    width: 345px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.tags__title {
+    color: rgb(41, 47, 54);
+    font-family: 'DM Serif Display';
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: 2%;
+    text-align: left;
+}
+
+.tags__buttons {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+}
+
+.tags__buttons-item {
+    cursor: pointer;
+    background: #f4f0ec;
+    padding: 9px 30px 9px 30px;
+    border-radius: 10px;
+    border: none;
+    color: rgb(41, 47, 54);
+    font-family: 'Jost';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: 2%;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.tags__buttons-item:hover {
+    background: rgb(41, 47, 54);
+    color: rgb(255, 255, 255);
+}
+
+
+/* стили для projects Page */
+
+.banner_projectPage {
+    background-image: url('../project/images/projectPage/Banner.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 356px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.banner_info_prjectPage {
+    position: absolute;
+    border-radius: 37px 37px 0px 0px;
+    background: rgb(255, 255, 255);
+    padding: 41px 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.banner_title_projectPage {
+    color: #292F36;
+    font-family: 'DM Serif Display';
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.banner_subtitle_projectPage {
+    color: #4D5053;
+    font-family: 'Jost';
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 1%;
+    text-align: left;
+}

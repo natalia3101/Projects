@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final project Vue</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="main_page_box">
+        <header class="header center">
+            <div class="logos">
+                <a href="index.html"><img class="logo" src="images/Logo.png" alt="logo"></a>
+                <a href="index.html" class="brand_name">Interno</a>
+            </div>
+            <nav class="nav_right-side">
+                <a href="index.html">Home</a>
+                <a href="#">Project</a>
+                <a href="#">Blog</a>
+            </nav>
+        </header>
+
+        <section class="top_get_started center">
+            <div class="banner_box">
+                <div class="banner_content">
+                    <h1 class="banner_content_heading">Let Your Home<br> Be Unique</h1>
+                    <p class="banner_content_text">There are many variations of the passages of<br> lorem Ipsum fromavailable, majority.</p>
+                    <button class="banner_content_button">Get Started <img class="button_arrow" src="images/button_arrow.svg" alt=""></button></div>
+            </div>
+        </section>
+
+        <section class="projects_nav center">
+            <h2 class="projects_title">Follow Our Projects</h2>
+
+            <div class="projects_text_box">
+                <p class="projects_text">It is a long established fact that a reader will be distracted by the of readable content of page lookings at its layouts points.</p>
+            </div>
+            <div class="projects_section">
+
+                <div class="project_box">
+                    <div class="image_box_1">
+                        <img class="project_img_1" src="images/project1.svg" alt="project1">
+                    </div>
+                    <div class="project_description">
+                        <div class="project_info">
+                            <h3 class="project_subtitle">Modern Kitchan</h3>
+                            <p class="project_category">Decor / Artchitecture</p>
+                        </div>
+                        <button class="beige_button"><img src="images/beige_button_arrow.svg" alt=""></button>
+                    </div>
+                </div>
+
+                <div class="project_box">
+                    <div class="image_box_2">
+                        <img class="project_img_2" src="images/project2.svg" alt="project2">
+                    </div>
+                    <div class="project_description">
+                        <div class="project_info">
+                            <h3 class="project_subtitle">Modern Kitchan</h3>
+                            <p class="project_category">Decor / Artchitecture</p>
+                        </div>
+                        <button class="beige_button"><img src="images/beige_button_arrow.svg" alt=""></button>
+                    </div>
+                </div>
+
+                <div class="project_box">
+                    <div class="image_box_3">
+                        <img class="project_img_3" src="images/project3.svg" alt="project3">
+                    </div>
+                    <div class="project_description">
+                        <div class="project_info">
+                            <h3 class="project_subtitle">Modern Kitchan</h3>
+                            <p class="project_category">Decor / Artchitecture</p>
+                        </div>
+                        <button class="beige_button"><img src="images/beige_button_arrow.svg" alt=""></button>
+                    </div>
+                </div>
+
+                <div class="project_box">
+                    <div class="image_box_4">
+                        <img class="project_img_4" src="images/project4.png" alt="project4">
+                    </div>
+                    <div class="project_description">
+                        <div class="project_info">
+                            <h3 class="project_subtitle">Modern Kitchan</h3>
+                            <p class="project_category">Decor / Artchitecture</p>
+                        </div>
+                        <button class="beige_button"><img src="images/beige_button_arrow.svg" alt=""></button>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <section class="statistics center">
+            <div class="statistics_block">
+                <div class="statistics_number">12</div>
+                <div class="statistics_text">Years Of Experiance</div>
+            </div>
+            <div class="statistics_block">
+                <div class="statistics_number">85</div>
+                <div class="statistics_text">Success Project</div>
+            </div>
+            <div class="statistics_block">
+                <div class="statistics_number">15</div>
+                <div class="statistics_text">Active Project</div>
+            </div>
+            <div class="statistics_block">
+                <div class="statistics_number">95</div>
+                <div class="statistics_text">Happy CUstomers</div>
+            </div>
+        </section>
+
+        <section class="articles_news center">
+            <h2 class="articles_news_title">Articles & News</h2>
+            <p class="articles_news_description">It is a long established fact that a reader will be distracted by the of readable content of a page when lookings at its layouts the points of using.</p>
+
+            <div class="articles__items articles__items-main">
+                <div v-for="article in articlesMain" :key="article.id" class="article_item">
+                    <div class="articles__items-image">
+                        <img :src="'../project/images/' + article.image" :alt="article.image">
+                        <p class="blog__img-text">{{article.imgText}}</p>
+                    </div>
+                    <div class="articles__items_info">
+                        <h2 class="articles__items-title">{{article.itemTitle}}</h2>
+                        <div class="articles__items-text">
+                            <p>{{article.itemData}}</p>
+                            <button class="beige_button beige_button_small"><img src="images/beige_button_arrow.svg" alt=""></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <footer class="footer center">
+            <div class="info_footer">
+                <div class="logos">
+                    <a href="index.html"><img class="logo" src="images/Logo.png" alt="logo"></a>
+                    <a href="index.html" class="brand_name">Interno</a>
+                </div>
+                <p class="footer_description">It is a long established fact that a reader will be distracted lookings.</p>
+            </div>
+            <div class="nav_footer">
+                <h3 class="nav_subtitle">Pages</h3>
+                <nav class="nav_footer_links">
+                    <a href="index.html">Home</a>
+                    <a href="#">Project</a>
+                    <a href="#">Blog</a>
+                </nav>
+            </div>
+
+            <div class="contact_info">
+                <h2 class="contact_title">Contact</h2>
+                <p class="contact_address">55 East Birchwood Ave. Brooklyn,
+                    <Br>New York 11201 </p>
+                <p class="contact_email">contact@interno.com</p>
+                <p class="contact_phone">(123) 456 - 7890</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="scriptMain.js"></script>
+</body>
+
+</html>
